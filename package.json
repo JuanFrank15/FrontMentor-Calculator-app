@@ -1,0 +1,19 @@
+{
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "description": "A challenge of creating a calculator app to test your CSS skills with a preprocessor of your choice and use of CSS Grid and Vanilla JS for the logic for the app.",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass --watch /src/styles/style.scss /src/styles/style.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JuanFrank15"
+  },
+  "keywords": ["HTML", "CSS Grid", "SASS", "Vanilla JS"],
+  "author": "Juan F. Martinez",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.58.0"
+  }
+}
