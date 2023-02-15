@@ -1,26 +1,27 @@
 @use "sass:math";
+@use "Theme";
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
-/********************* COLOR *********************/
 
-// Background
-$Background_main-very-dark-blue: hsl(222, 26%, 31%);
-$Background_toggle-very-dark-blue: hsl(223, 31%, 20%);
-$Background_screen-very-dark-blue: hsl(224, 36%, 15%);
+/********************* Color Theme 1 *********************/
+// Background theme 1
+$Background_main-theme1: hsl(222, 26%, 31%);
+$Background_togglenadkeypad-theme1: hsl(223, 31%, 20%);
+$Background_screen-theme1: hsl(224, 36%, 15%);
 
-// button
-$Background_deleteKey-dark-blue: hsl(225, 21%, 49%);
-$Shadow_deleteKey-dark-blue: hsl(224, 28%, 35%);
+// button theme 1
+$Background_deleteKey-theme1: hsl(225, 21%, 49%);
+$Shadow_deleteKey-theme1: hsl(224, 28%, 35%);
 
-$Background_resultKey_andToggle-red: hsl(6, 63%, 50%);
-$Shadow_resultKey-dark-red: hsl(6, 70%, 34%);
+$Background_resultKeyandToggle-theme1: hsl(6, 63%, 50%);
+$Shadow_resultKey-theme1: hsl(6, 70%, 34%);
 
-$Background_defaultKey-orange: hsl(30, 25%, 89%);
-$Shadow_defaultKey-dark-orange: hsl(28, 16%, 65%);
 
-// Text
-$Text_key-very-dark-grayish-blue: hsl(221, 14%, 31%);
-$Text_content-white: hsl(0, 0%, 100%);
+$Background_defaultKey-theme1: hsl(30, 25%, 89%);
+$Shadow_defaultKey-theme1: hsl(28, 16%, 65%);
 
+// Text theme 1
+$Text_key-theme1: hsl(221, 14%, 31%);
+$Text_content-theme1: hsl(0, 0%, 100%);
 /*********************  *********************/
 
 * {
@@ -38,7 +39,6 @@ body {
   font-weight: 700;
   width: 100vw;
   height: 100vh;
-  background-color: hsl(222deg, 26%, 31%);
 }
 
 .hero_container {
@@ -59,13 +59,13 @@ body {
   align-items: center;
   width: 100%;
   height: math.div(42px, 607px) * 100%;
+  
 
   h1 {
     font-size: 32px;
     line-height: 29px;
     text-align: center;
     letter-spacing: -0.533333px;
-    color: $Text_content-white;
     transform: translateX(7px);
   }
 
@@ -85,7 +85,6 @@ body {
       width: 71px;
       font-size: 12px;
       line-height: 11px;
-      color: $Text_content-white;
       gap: 16px;
       
     }
@@ -94,11 +93,10 @@ body {
       font-size: 12px;
       line-height: 11px;
       letter-spacing: 1px;
-      color: $Text_content-white;
+      
     }
     .theme_container-toggle {
       display: inline-flex;
-      background-color: $Background_toggle-very-dark-blue;
       grid-area: 2 / 2 / 3 / 3;
       width: 71px;
       justify-content: flex-start;
@@ -111,7 +109,6 @@ body {
         height: 16px;
         border-radius: 16px; 
         cursor: pointer;
-        background-color: $Background_resultKey_andToggle-red;
       }
     }
   }
@@ -133,14 +130,13 @@ body {
     align-items: flex-end;
     width: 100%;
     height: math.div(88px, 538px) * 100%;
-    background-color: $Background_screen-very-dark-blue;
+    
     border-radius: 10px;
 
     span {
       font-size: 40px;
       line-height: 37px;
       letter-spacing: -0.666667px;
-      color: $Text_content-white;
       transform: translateX(-20px);
     }
 
@@ -154,6 +150,8 @@ body {
     }
   }
 
+  
+
   .btn_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -161,11 +159,9 @@ body {
     justify-items: center;
     width: 100%;
     height: math.div(420px, 538px) * 100%;
-    background-color: $Background_toggle-very-dark-blue;
     border-radius: 10px;
     padding: 24px;
     gap: 13px;
-
     .btn_default,
     .btn_default-delete,
     .btn_default-reset,
@@ -175,29 +171,21 @@ body {
       border-radius: 10px;
       border: none;
     }
-
     .btn_default:active,
     .btn_default-delete:active,
     .btn_default-reset:active,
     .btn_default-result:active{
       opacity: 0.6;
     }
-
     .btn_default {
       max-width: 101px;
       font-size: 32px;
       line-height: 29px;
-      color: $Text_key-very-dark-grayish-blue;
-      background-color: $Background_defaultKey-orange;
-      box-shadow: inset 0px -4px 0px 0px $Shadow_defaultKey-dark-orange;
     }
     .btn_default-delete {
       max-width: 101px;
       font-size: 20px;
-      line-height: 18px;
-      color: $Text_content-white;
-      background-color: $Background_deleteKey-dark-blue;
-      box-shadow: inset 0px -4px 0px 0px $Shadow_deleteKey-dark-blue;
+      line-height: 18px;  
     }
     .btn_default-reset {
       grid-column-start: 1;
@@ -205,9 +193,6 @@ body {
       max-width: 227px;
       font-size: 20px;
       line-height: 18px;
-      color: $Text_content-white;
-      background-color: $Background_deleteKey-dark-blue;
-      box-shadow: inset 0px -4px 0px 0px $Shadow_deleteKey-dark-blue;
     }
     .btn_default-result {
       grid-column-start: 3;
@@ -215,21 +200,52 @@ body {
       max-width: 227px;
       font-size: 20px;
       line-height: 18px;
-      color: $Text_content-white;
-      background-color: $Background_resultKey_andToggle-red;
-      box-shadow: inset 0px -4px 0px 0px $Shadow_resultKey-dark-red;
     }
 
   }
 }
 
-/********************* Theme *********************/
+/********************* Theme 1 *********************/
+
+.body_theme1{
+  background-color: $Background_main-theme1;
+  color: $Text_content-theme1;
+}
+
+.output_theme1{
+  background-color: $Background_screen-theme1;
+  color: $Text_content-theme1;
+}
+.bg_toggle_keypad-theme1{
+  background-color: $Background_togglenadkeypad-theme1;
+}
+.btn_default-theme1{
+  color: $Text_key-theme1;
+  background-color: $Background_defaultKey-theme1;
+  box-shadow: inset 0px -4px 0px 0px $Shadow_defaultKey-theme1;
+}
+.btn_del-theme1{
+  color: $Text_content-theme1;
+  background-color: $Background_deleteKey-theme1;
+  box-shadow: inset 0px -4px 0px 0px $Shadow_deleteKey-theme1;
+}
+.btn_result-theme1 {
+  color: $Text_content-theme1;
+  background-color: $Background_resultKeyandToggle-theme1;
+  box-shadow: inset 0px -4px 0px 0px $Shadow_resultKey-theme1;
+}
+
+
 .theme-1{
+  background-color: $Background_resultKeyandToggle-theme1;
   transform: translatex(5px);
 }
 .theme-2{
+  background-color: Theme.$Background_resultKeyandToggle-theme2;
   transform: translatex(25.5px);
 }
 .theme-3{
+  background-color: Theme.$Background_resultKeyandToggle-theme3;
   transform: translatex(48px);
 }
+

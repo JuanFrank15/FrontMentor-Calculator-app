@@ -1,0 +1,105 @@
+// Background theme 2
+$Background_main-theme2: hsl(0, 0%, 90%);
+$Background_togglenadkeypad-theme2: hsl(0, 5%, 81%);
+$Background_screen-theme2: hsl(0, 0%, 93%);
+
+// button theme 2
+$Background_deleteKey-theme2: hsl(185, 42%, 37%);
+$Shadow_deleteKey-theme2: hsl(185, 58%, 25%);
+
+$Background_resultKeyandToggle-theme2: hsl(25, 98%, 40%);
+$Shadow_resultKey-theme2: hsl(25, 99%, 27%);
+
+$Background_defaultKey-theme2: hsl(30, 25%, 89%);
+$Shadow_defaultKey-theme2: hsl(28, 16%, 65%);
+
+// Text theme 2
+$Text_key-theme2: hsl(60, 10%, 19%);
+$Text_content-theme2: hsl(0, 0%, 100%);
+
+// Background theme 3
+$Background_main-theme3: hsl(268, 75%, 9%);
+$Background_togglenadkeypad-theme3: hsl(268, 71%, 12%);
+$Background_screen-theme3: hsl(268, 71%, 12%);
+
+// button theme 3
+$Background_deleteKey-theme3: hsl(281, 89%, 26%);
+$Shadow_deleteKey-theme3: hsl(285, 91%, 52%);
+
+$Background_resultKeyandToggle-theme3: hsl(176, 100%, 44%);
+$Shadow_resultKey-theme3: hsl(177, 92%, 70%);
+
+$Background_defaultKey-theme3: hsl(268, 47%, 21%);
+$Shadow_defaultKey-theme3: hsl(290, 70%, 36%);
+
+// Text theme 3
+$Text_keyAndContent-theme3: hsl(52, 100%, 62%);
+$Text_keyResult-theme3: hsl(198, 20%, 13%);
+$Text_keyDelAndReset-theme3: hsl(0, 0%, 100%);
+
+@mixin Theme($bgColor, $Color, $bsColor) {
+  background-color: $bgColor;
+  box-shadow: inset 0px -4px 0px 0px $bsColor;
+  color: $Color;
+}
+
+/********************* Theme 2 *********************/
+.body_theme2 {
+  @include Theme($Background_main-theme2, $Text_content-theme2, undefined);
+}
+.output_theme2 {
+  @include Theme($Background_screen-theme2, $Text_content-theme2, undefined);
+}
+
+.bg_toggle_keypad-theme2 {
+  background-color: $Background_togglenadkeypad-theme2;
+}
+
+.btn_default-theme2 {
+  color: $Text_key-theme2;
+  background-color: $Background_defaultKey-theme2;
+  box-shadow: inset 0px -4px 0px 0px $Shadow_defaultKey-theme2;
+}
+
+.btn_del-theme2 {
+  color: $Text_content-theme2;
+  background-color: $Background_deleteKey-theme2;
+  box-shadow: inset 0px -4px 0px 0px $Shadow_deleteKey-theme2;
+}
+
+.btn_result-theme2 {
+  color: $Text_content-theme2;
+  background-color: $Background_resultKeyandToggle-theme2;
+  box-shadow: inset 0px -4px 0px 0px $Shadow_resultKey-theme2;
+}
+
+/********************* Theme 3 *********************/
+.body_theme3 {
+  background-color: $Background_main-theme3;
+  color: $Text_keyAndContent-theme3;
+}
+.output_theme3 {
+  background-color: $Background_screen-theme3;
+  color: $Text_keyAndContent-theme3;
+}
+
+.bg_toggle_keypad-theme3 {
+  background-color: $Background_togglenadkeypad-theme3;
+}
+.btn_default-theme3 {
+  color: $Text_keyAndContent-theme3;
+  background-color: $Background_defaultKey-theme3;
+  box-shadow: inset 0px -4px 0px 0px $Shadow_defaultKey-theme3;
+}
+
+.btn_del-theme3 {
+  color: $Text_keyDelAndReset-theme3;
+  background-color: $Background_deleteKey-theme3;
+  box-shadow: inset 0px -4px 0px 0px $Shadow_deleteKey-theme3;
+}
+
+.btn_result-theme3 {
+  color: $Text_keyResult-theme3;
+  background-color: $Background_resultKeyandToggle-theme3;
+  box-shadow: inset 0px -4px 0px 0px $Shadow_resultKey-theme3;
+}

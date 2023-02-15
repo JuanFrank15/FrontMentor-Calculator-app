@@ -1,5 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
-/********************* COLOR *********************/
+/********************* Theme 2 *********************/
+.body_theme2 {
+  background-color: hsl(0deg, 0%, 90%);
+  box-shadow: inset 0px -4px 0px 0px undefined;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.output_theme2 {
+  background-color: hsl(0deg, 0%, 93%);
+  box-shadow: inset 0px -4px 0px 0px undefined;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.bg_toggle_keypad-theme2 {
+  background-color: hsl(0deg, 5%, 81%);
+}
+
+.btn_default-theme2 {
+  color: hsl(60deg, 10%, 19%);
+  background-color: hsl(30deg, 25%, 89%);
+  box-shadow: inset 0px -4px 0px 0px hsl(28deg, 16%, 65%);
+}
+
+.btn_del-theme2 {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: inset 0px -4px 0px 0px hsl(185deg, 58%, 25%);
+}
+
+.btn_result-theme2 {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 98%, 40%);
+  box-shadow: inset 0px -4px 0px 0px hsl(25deg, 99%, 27%);
+}
+
+/********************* Theme 3 *********************/
+.body_theme3 {
+  background-color: hsl(268deg, 75%, 9%);
+  color: hsl(52deg, 100%, 62%);
+}
+
+.output_theme3 {
+  background-color: hsl(268deg, 71%, 12%);
+  color: hsl(52deg, 100%, 62%);
+}
+
+.bg_toggle_keypad-theme3 {
+  background-color: hsl(268deg, 71%, 12%);
+}
+
+.btn_default-theme3 {
+  color: hsl(52deg, 100%, 62%);
+  background-color: hsl(268deg, 47%, 21%);
+  box-shadow: inset 0px -4px 0px 0px hsl(290deg, 70%, 36%);
+}
+
+.btn_del-theme3 {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(281deg, 89%, 26%);
+  box-shadow: inset 0px -4px 0px 0px hsl(285deg, 91%, 52%);
+}
+
+.btn_result-theme3 {
+  color: hsl(198deg, 20%, 13%);
+  background-color: hsl(176deg, 100%, 44%);
+  box-shadow: inset 0px -4px 0px 0px hsl(177deg, 92%, 70%);
+}
+
+/********************* Color Theme 1 *********************/
 /*********************  *********************/
 * {
   margin: 0;
@@ -16,7 +84,6 @@ body {
   font-weight: 700;
   width: 100vw;
   height: 100vh;
-  background-color: hsl(222deg, 26%, 31%);
 }
 
 .hero_container {
@@ -43,7 +110,6 @@ body {
   line-height: 29px;
   text-align: center;
   letter-spacing: -0.533333px;
-  color: hsl(0deg, 0%, 100%);
   transform: translateX(7px);
 }
 .header_container-theme {
@@ -62,7 +128,6 @@ body {
   width: 71px;
   font-size: 12px;
   line-height: 11px;
-  color: hsl(0deg, 0%, 100%);
   gap: 16px;
 }
 .header_container-theme .label-theme {
@@ -70,11 +135,9 @@ body {
   font-size: 12px;
   line-height: 11px;
   letter-spacing: 1px;
-  color: hsl(0deg, 0%, 100%);
 }
 .header_container-theme .theme_container-toggle {
   display: inline-flex;
-  background-color: hsl(223deg, 31%, 20%);
   grid-area: 2/2/3/3;
   width: 71px;
   justify-content: flex-start;
@@ -87,7 +150,6 @@ body {
   height: 16px;
   border-radius: 16px;
   cursor: pointer;
-  background-color: hsl(6deg, 63%, 50%);
 }
 
 /********************* Main *********************/
@@ -105,14 +167,12 @@ body {
   align-items: flex-end;
   width: 100%;
   height: 16.3568773234%;
-  background-color: hsl(224deg, 36%, 15%);
   border-radius: 10px;
 }
 .main_container .output_container span {
   font-size: 40px;
   line-height: 37px;
   letter-spacing: -0.666667px;
-  color: hsl(0deg, 0%, 100%);
   transform: translateX(-20px);
 }
 .main_container .output_container-previus {
@@ -129,7 +189,6 @@ body {
   justify-items: center;
   width: 100%;
   height: 78.0669144981%;
-  background-color: hsl(223deg, 31%, 20%);
   border-radius: 10px;
   padding: 24px;
   gap: 13px;
@@ -153,17 +212,11 @@ body {
   max-width: 101px;
   font-size: 32px;
   line-height: 29px;
-  color: hsl(221deg, 14%, 31%);
-  background-color: hsl(30deg, 25%, 89%);
-  box-shadow: inset 0px -4px 0px 0px hsl(28deg, 16%, 65%);
 }
 .main_container .btn_container .btn_default-delete {
   max-width: 101px;
   font-size: 20px;
   line-height: 18px;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(225deg, 21%, 49%);
-  box-shadow: inset 0px -4px 0px 0px hsl(224deg, 28%, 35%);
 }
 .main_container .btn_container .btn_default-reset {
   grid-column-start: 1;
@@ -171,9 +224,6 @@ body {
   max-width: 227px;
   font-size: 20px;
   line-height: 18px;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(225deg, 21%, 49%);
-  box-shadow: inset 0px -4px 0px 0px hsl(224deg, 28%, 35%);
 }
 .main_container .btn_container .btn_default-result {
   grid-column-start: 3;
@@ -181,21 +231,53 @@ body {
   max-width: 227px;
   font-size: 20px;
   line-height: 18px;
+}
+
+/********************* Theme 1 *********************/
+.body_theme1 {
+  background-color: hsl(222deg, 26%, 31%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.output_theme1 {
+  background-color: hsl(224deg, 36%, 15%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.bg_toggle_keypad-theme1 {
+  background-color: hsl(223deg, 31%, 20%);
+}
+
+.btn_default-theme1 {
+  color: hsl(221deg, 14%, 31%);
+  background-color: hsl(30deg, 25%, 89%);
+  box-shadow: inset 0px -4px 0px 0px hsl(28deg, 16%, 65%);
+}
+
+.btn_del-theme1 {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(225deg, 21%, 49%);
+  box-shadow: inset 0px -4px 0px 0px hsl(224deg, 28%, 35%);
+}
+
+.btn_result-theme1 {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(6deg, 63%, 50%);
   box-shadow: inset 0px -4px 0px 0px hsl(6deg, 70%, 34%);
 }
 
-/********************* Theme *********************/
 .theme-1 {
+  background-color: hsl(6deg, 63%, 50%);
   transform: translatex(5px);
 }
 
 .theme-2 {
+  background-color: hsl(25deg, 98%, 40%);
   transform: translatex(25.5px);
 }
 
 .theme-3 {
+  background-color: hsl(176deg, 100%, 44%);
   transform: translatex(48px);
 }
 
