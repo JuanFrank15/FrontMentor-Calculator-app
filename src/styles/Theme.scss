@@ -45,61 +45,48 @@ $Text_keyDelAndReset-theme3: hsl(0, 0%, 100%);
 
 /********************* Theme 2 *********************/
 .body_theme2 {
-  @include Theme($Background_main-theme2, $Text_content-theme2, undefined);
+  @include Theme($Background_main-theme2, $Text_key-theme2, undefined)
 }
 .output_theme2 {
-  @include Theme($Background_screen-theme2, $Text_content-theme2, undefined);
+  @include Theme($Background_screen-theme2, $Text_key-theme2, undefined)
 }
-
 .bg_toggle_keypad-theme2 {
-  background-color: $Background_togglenadkeypad-theme2;
+  @include Theme ($Background_togglenadkeypad-theme2, undefined, undefined)
 }
 
 .btn_default-theme2 {
-  color: $Text_key-theme2;
-  background-color: $Background_defaultKey-theme2;
-  box-shadow: inset 0px -4px 0px 0px $Shadow_defaultKey-theme2;
+  @include Theme($Background_defaultKey-theme2, $Text_key-theme2, $Shadow_defaultKey-theme2 )
 }
 
 .btn_del-theme2 {
-  color: $Text_content-theme2;
-  background-color: $Background_deleteKey-theme2;
-  box-shadow: inset 0px -4px 0px 0px $Shadow_deleteKey-theme2;
+  @include Theme($Background_deleteKey-theme2, $Text_content-theme2, $Shadow_deleteKey-theme2)
 }
 
 .btn_result-theme2 {
-  color: $Text_content-theme2;
-  background-color: $Background_resultKeyandToggle-theme2;
-  box-shadow: inset 0px -4px 0px 0px $Shadow_resultKey-theme2;
+  @include Theme($Background_resultKeyandToggle-theme2, $Text_content-theme2, $Shadow_resultKey-theme2)
 }
 
 /********************* Theme 3 *********************/
+
 .body_theme3 {
-  background-color: $Background_main-theme3;
-  color: $Text_keyAndContent-theme3;
+  @include Theme($Background_main-theme3,$Text_keyAndContent-theme3 , undefined )
 }
 .output_theme3 {
-  background-color: $Background_screen-theme3;
-  color: $Text_keyAndContent-theme3;
+  @include Theme($Background_screen-theme3,$Text_keyAndContent-theme3 , undefined )
 }
 
 .bg_toggle_keypad-theme3 {
-  background-color: $Background_togglenadkeypad-theme3;
+  @include Theme($Background_togglenadkeypad-theme3, undefined, undefined)
 }
+
 .btn_default-theme3 {
-  color: $Text_keyAndContent-theme3;
-  background-color: $Background_defaultKey-theme3;
-  box-shadow: inset 0px -4px 0px 0px $Shadow_defaultKey-theme3;
+  @include Theme($Background_defaultKey-theme3,$Text_keyAndContent-theme3, $Shadow_defaultKey-theme3)
 }
 
 .btn_del-theme3 {
-  color: $Text_keyDelAndReset-theme3;
-  background-color: $Background_deleteKey-theme3;
-  box-shadow: inset 0px -4px 0px 0px $Shadow_deleteKey-theme3;
+  @include Theme($Background_deleteKey-theme3, $Text_keyDelAndReset-theme3, $Shadow_deleteKey-theme3 )
 }
 
 .btn_result-theme3 {
-  color: $Text_keyResult-theme3;
-  background-color: $Background_resultKeyandToggle-theme3;
-  box-shadow: inset 0px -4px 0px 0px $Shadow_resultKey-theme3;
+  @include Theme($Background_resultKeyandToggle-theme3, $Text_keyResult-theme3, $Shadow_resultKey-theme3)
 }

@@ -30,32 +30,31 @@
       </header>
       <main class="main_container">
         <div class="output_container output_theme1">
-          <span class="output_container-previus"></span>
-          <span class="output_container-current"></span>
+          <span data-previous-operand class="output_container-previus"></span>
+          <span data-current-operand class="output_container-current"></span>
         </div>
         <div class="bg_keypad btn_container bg_toggle_keypad-theme1">
-          <button class="btn_default-theme1 btn_Number btn_default">7</button>
-          <button class="btn_default-theme1 btn_Number btn_default">8</button>
-          <button class="btn_default-theme1 btn_Number btn_default">9</button>
-          <button class="btn_del-theme1 btn_default-delete btnDel">DEL</button>
-          <button class="btn_default-theme1 btn_Number btn_default">4</button>
-          <button class="btn_default-theme1 btn_Number btn_default">5</button>
-          <button class="btn_default-theme1 btn_Number btn_default">6</button>
-          <button class="btn_default-theme1 btn_default">+</button>
-          <button class="btn_default-theme1 btn_Number btn_default">1</button>
-          <button class="btn_default-theme1 btn_Number btn_default">2</button>
-          <button class="btn_default-theme1 btn_Number btn_default">3</button>
-          <button class="btn_default-theme1 btn_default">-</button>
-          <button class="btn_default-theme1 btn_default">.</button>
-          <button class="btn_default-theme1 btn_Number btn_default">0</button>
-          <button class="btn_default-theme1 btn_default">/</button>
-          <button class="btn_default-theme1 btn_default">x</button>
-          <button class="btn_del-theme1 btn_default-reset btnDel">RESET</button>
-          <button class="btn_result-theme1 btn_default-result">=</button>
+          <button data-number class="btn_default-theme1 btn_default">7</button>
+          <button data-number class="btn_default-theme1 btn_default">8</button>
+          <button data-number class="btn_default-theme1 btn_default">9</button>
+          <button data-delete class="btn_del-theme1 btn_default-delete btnDel">DEL</button>
+          <button data-number class="btn_default-theme1 btn_default">4</button>
+          <button data-number class="btn_default-theme1 btn_default">5</button>
+          <button data-number class="btn_default-theme1 btn_default">6</button>
+          <button data-operation class="btn_default-theme1 btn_default">+</button>
+          <button data-number class="btn_default-theme1 btn_default">1</button>
+          <button data-number class="btn_default-theme1 btn_default">2</button>
+          <button data-number class="btn_default-theme1 btn_default">3</button>
+          <button data-operation class="btn_default-theme1 btn_default">-</button>
+          <button data-number class="btn_default-theme1 btn_default">.</button>
+          <button data-number class="btn_default-theme1 btn_default">0</button>
+          <button data-operation class="btn_default-theme1 btn_default">/</button>
+          <button data-operation class="btn_default-theme1 btn_default">x</button>
+          <button data-reset class="btn_del-theme1 btn_default-reset btnDel">RESET</button>
+          <button data-equals class="btn_result-theme1 btn_default-result">=</button>
         </div>
       </main>
-    
     </div>
-    <script src="/src/scripts/app.js"></script>
+    <script type="module" src="./src/scripts/app.js"></script>
   </body>
 </html>

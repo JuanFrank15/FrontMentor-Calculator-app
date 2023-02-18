@@ -1,27 +1,7 @@
 @use "sass:math";
 @use "Theme";
+
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
-
-/********************* Color Theme 1 *********************/
-// Background theme 1
-$Background_main-theme1: hsl(222, 26%, 31%);
-$Background_togglenadkeypad-theme1: hsl(223, 31%, 20%);
-$Background_screen-theme1: hsl(224, 36%, 15%);
-
-// button theme 1
-$Background_deleteKey-theme1: hsl(225, 21%, 49%);
-$Shadow_deleteKey-theme1: hsl(224, 28%, 35%);
-
-$Background_resultKeyandToggle-theme1: hsl(6, 63%, 50%);
-$Shadow_resultKey-theme1: hsl(6, 70%, 34%);
-
-
-$Background_defaultKey-theme1: hsl(30, 25%, 89%);
-$Shadow_defaultKey-theme1: hsl(28, 16%, 65%);
-
-// Text theme 1
-$Text_key-theme1: hsl(221, 14%, 31%);
-$Text_content-theme1: hsl(0, 0%, 100%);
 /*********************  *********************/
 
 * {
@@ -142,15 +122,13 @@ body {
 
     &-previus {
       font-size: 20px;
-      display: none;
+      
     }
 
     &-current {
       font-size: 40px;
     }
   }
-
-  
 
   .btn_container {
     display: grid;
@@ -205,7 +183,31 @@ body {
   }
 }
 
-/********************* Theme 1 *********************/
+
+.hidden {
+  display: none;
+}
+/********************* Theme 1  *********************/
+// Background theme 1
+$Background_main-theme1: hsl(222, 26%, 31%);
+$Background_togglenadkeypad-theme1: hsl(223, 31%, 20%);
+$Background_screen-theme1: hsl(224, 36%, 15%);
+
+// button theme 1
+$Background_deleteKey-theme1: hsl(225, 21%, 49%);
+$Shadow_deleteKey-theme1: hsl(224, 28%, 35%);
+
+$Background_resultKeyandToggle-theme1: hsl(6, 63%, 50%);
+$Shadow_resultKey-theme1: hsl(6, 70%, 34%);
+
+
+$Background_defaultKey-theme1: hsl(30, 25%, 89%);
+$Shadow_defaultKey-theme1: hsl(28, 16%, 65%);
+
+// Text theme 1
+$Text_key-theme1: hsl(221, 14%, 31%);
+$Text_content-theme1: hsl(0, 0%, 100%);
+
 
 .body_theme1{
   background-color: $Background_main-theme1;
@@ -235,7 +237,7 @@ body {
   box-shadow: inset 0px -4px 0px 0px $Shadow_resultKey-theme1;
 }
 
-
+/********************* Switch 3 Toggle  *********************/
 .theme-1{
   background-color: $Background_resultKeyandToggle-theme1;
   transform: translatex(5px);

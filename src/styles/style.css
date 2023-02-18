@@ -3,71 +3,76 @@
 .body_theme2 {
   background-color: hsl(0deg, 0%, 90%);
   box-shadow: inset 0px -4px 0px 0px undefined;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(60deg, 10%, 19%);
 }
 
 .output_theme2 {
   background-color: hsl(0deg, 0%, 93%);
   box-shadow: inset 0px -4px 0px 0px undefined;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(60deg, 10%, 19%);
 }
 
 .bg_toggle_keypad-theme2 {
   background-color: hsl(0deg, 5%, 81%);
+  box-shadow: inset 0px -4px 0px 0px undefined;
+  color: undefined;
 }
 
 .btn_default-theme2 {
-  color: hsl(60deg, 10%, 19%);
   background-color: hsl(30deg, 25%, 89%);
   box-shadow: inset 0px -4px 0px 0px hsl(28deg, 16%, 65%);
+  color: hsl(60deg, 10%, 19%);
 }
 
 .btn_del-theme2 {
-  color: hsl(0deg, 0%, 100%);
   background-color: hsl(185deg, 42%, 37%);
   box-shadow: inset 0px -4px 0px 0px hsl(185deg, 58%, 25%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .btn_result-theme2 {
-  color: hsl(0deg, 0%, 100%);
   background-color: hsl(25deg, 98%, 40%);
   box-shadow: inset 0px -4px 0px 0px hsl(25deg, 99%, 27%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 /********************* Theme 3 *********************/
 .body_theme3 {
   background-color: hsl(268deg, 75%, 9%);
+  box-shadow: inset 0px -4px 0px 0px undefined;
   color: hsl(52deg, 100%, 62%);
 }
 
 .output_theme3 {
   background-color: hsl(268deg, 71%, 12%);
+  box-shadow: inset 0px -4px 0px 0px undefined;
   color: hsl(52deg, 100%, 62%);
 }
 
 .bg_toggle_keypad-theme3 {
   background-color: hsl(268deg, 71%, 12%);
+  box-shadow: inset 0px -4px 0px 0px undefined;
+  color: undefined;
 }
 
 .btn_default-theme3 {
-  color: hsl(52deg, 100%, 62%);
   background-color: hsl(268deg, 47%, 21%);
   box-shadow: inset 0px -4px 0px 0px hsl(290deg, 70%, 36%);
+  color: hsl(52deg, 100%, 62%);
 }
 
 .btn_del-theme3 {
-  color: hsl(0deg, 0%, 100%);
   background-color: hsl(281deg, 89%, 26%);
   box-shadow: inset 0px -4px 0px 0px hsl(285deg, 91%, 52%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .btn_result-theme3 {
-  color: hsl(198deg, 20%, 13%);
   background-color: hsl(176deg, 100%, 44%);
   box-shadow: inset 0px -4px 0px 0px hsl(177deg, 92%, 70%);
+  color: hsl(198deg, 20%, 13%);
 }
 
-/********************* Color Theme 1 *********************/
 /*********************  *********************/
 * {
   margin: 0;
@@ -177,7 +182,6 @@ body {
 }
 .main_container .output_container-previus {
   font-size: 20px;
-  display: none;
 }
 .main_container .output_container-current {
   font-size: 40px;
@@ -233,7 +237,11 @@ body {
   line-height: 18px;
 }
 
-/********************* Theme 1 *********************/
+.hidden {
+  display: none;
+}
+
+/********************* Theme 1  *********************/
 .body_theme1 {
   background-color: hsl(222deg, 26%, 31%);
   color: hsl(0deg, 0%, 100%);
@@ -266,6 +274,7 @@ body {
   box-shadow: inset 0px -4px 0px 0px hsl(6deg, 70%, 34%);
 }
 
+/********************* Switch 3 Toggle  *********************/
 .theme-1 {
   background-color: hsl(6deg, 63%, 50%);
   transform: translatex(5px);
